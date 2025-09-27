@@ -2,6 +2,7 @@ import Hero from "app/components/hero";
 import Container from "app/components/container";
 import PostBody from "app/components/post-body";
 import Contact from "app/components/contact";
+import Meta from "app/components/meta";
 import {
   TwoColumn,
   TwoColumnMain,
@@ -13,6 +14,12 @@ import eyecatch from "images/about.jpg";
 export default function About() {
   return (
     <Container>
+      <Meta
+        pageTitle="アバウト"
+        pageImg={eyecatch.src}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
+      />
       <Hero title="About" subtitle="About development activities" />
 
       <figure>
